@@ -1,0 +1,305 @@
+
+/**Online Registration Form - Project 3 - Chi Edwards **/
+
+/** Header and body **/
+
+*{
+  box-sizing: border-box;  
+}
+
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    color: #696969;   
+    font-size: 0.9em;
+    margin-top: 0;
+}
+
+.container-form {
+    
+    max-width: 768px;
+    margin: auto;
+    padding: 10px;
+}
+
+.main-head {
+    max-width: 768px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+p {
+    text-align: center;    
+    border-color: #5c8080;   
+    padding-bottom: 10px;
+}
+
+#blurb {
+    border-bottom-style: double;
+}
+
+h1 {
+   font-family:"Noto Sans", sans-sarif; 
+    background-color: #5c8080; 
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+h2 {
+    font-family:"Noto Sans", sans-sarif; 
+    color: #3f3f3f;
+    font-size: 1em;
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1em;
+    
+    
+}
+
+/** Form **/ 
+
+form {
+    font-family: "Noto Sans", sans-serif;
+    font-size: .9em;
+    line-height: 1.9;
+    background: #e6f0f0;
+    padding: 10px;    
+}
+
+.form-title {
+    color: #5c8080;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#newsletter {
+    border-bottom: solid 2px #5c8080;
+    
+}
+
+ul {
+    margin: auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+input::placeholder {
+  font-size: .7em;
+  text-align: right;
+  color: #a7abab;
+  padding-right: 5px;
+  font-style: italic;
+}
+
+.basic-info,
+.news-info
+.add-info {
+    padding: 10px;
+    
+}
+
+.basic-info ul {
+  display: inline-block;  
+}
+
+fieldset {
+    border: none;
+    margin-top: 10px;
+}
+
+option {
+    font-family:"Noto Sans", sans-sarif; 
+    font-size: .9em;
+    border: none;
+    padding: 5px;
+}
+
+option:checked {
+    font-weight: bold;
+}
+
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor:pointer; 
+    
+}
+
+input[type="checkbox"] {
+    padding-right: 10px;
+    padding: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #6d7474;;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    border-radius: 5px;
+    background: #f2f7f7;
+    border-style: none;
+    height: 25px;
+    width: 335px;
+    padding: 5px;
+    
+}
+
+
+#city {
+    border-style: none;
+    height: 30px;
+    border-radius: 5px;
+    background: #f2f7f7;
+    width: 335px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #76a4a5;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="radio"]{
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #6d7474;
+}
+
+textarea {
+    background-color: #f6f6f6;
+    font-size: 0.9em;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 50px;        
+}
+
+#post-code {
+    width: 150px;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.button {
+    width: 100%;
+    display: inline-block;
+    padding-right: 10px;
+    border-style: none;
+    flex-grow: ;
+    margin: auto;
+}
+    
+.button:hover {
+    background: #e6e6e6;
+    transition: background-color 2s easeout;
+    cursor: pointer;  
+    color: #666666;
+}
+
+.sign-up,
+.reset {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 5px;  
+    width: 325px;
+}
+
+.sign-up {
+    background: #699293;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.reset {
+    background: #bfbfbf;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+
+/** Footer **/
+
+footer {
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Noto Sans", sans-sarif;
+    font-style:oblique;
+}
+
+
+/** Media Query **/
+
+@media (min-width: 768px){
+    
+   .main-head {
+    max-width: 960px;
+}
+    .container-form {
+       width: 768px; 
+       margin: 0 auto; 
+    }
+        
+    #newsletter {
+        width: 695px;
+    }
+    
+    .primary {
+        display: inline-block;
+        width: 125px;
+        margin-top: -5px;
+        margin-left:10px;             
+        margin: 10px;
+    }
+    
+    .secondary {     
+        margin-top: -5px;
+        margin: 10px;
+    }
+            
+        
+    textarea {
+        width: 710px;
+    }
+    
+    .button {
+        width: 710px;
+    }    
+ 
+    
+}  
+
+    
+    
+
+    
+
